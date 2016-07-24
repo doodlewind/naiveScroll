@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naive Scroll Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 100%;
+            left: 0;
+            height: 100%;
+            position: absolute;
+        }
+        .page1 {
+            top: 0;
+            background-color: lightcoral;
+        }
+        .page2 {
+            top: 100%;
+            background-color: lightgreen;
+        }
+        .page3 {
+            top: 200%;
+            background-color: lightblue;
+        }
+        button {
+            height: 60px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 15px;
+            font-size: 1.5em;
+            color: white;
+            border: 2px white solid;
+            background-color: transparent;
+        }
+        #upBtn {
+            position: fixed;
+            top: 100px;
+            left: 120px;
+            z-index: 99;
+        }
+        #downBtn {
+            position: fixed;
+            top: 100px;
+            left: 200px;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <button id="upBtn">UP</button>
+    <button id="downBtn">DOWN</button>
+    <section class="page1"></section>
+    <section class="page2"></section>
+    <section class="page3"></section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/naiveScroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
